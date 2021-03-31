@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>"Go" in the Moby project - Contributing Today</title>
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/simple2.css" id="theme">
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+</head>
+<body>
+<div class="reveal">
+    <style>
+        .reveal .slides > section.present, .reveal .slides > section > section.present {
+            text-align: left;
+        }
+
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+            text-align: justify;
+        }
+
+        .reveal .slides p {
+            text-align: justify;
+        }
+
+        .reveal pre {
+            width: 100%;
+        }
+    </style>
+
+    <div class="slides">
+        <!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
+        <section data-markdown="001_moby_and_go.md" data-separator="^\n\n\n" data-vertical="^\n\n"></section>
+        <section data-markdown="002_questions.md" data-separator="^\n\n\n" data-vertical="^\n\n"></section>
+        <section data-markdown="003_contributing.md" data-separator="^\n\n\n" data-vertical="^\n\n"></section>
+        <section data-markdown="004_documentation.md" data-separator="^\n\n\n" data-vertical="^\n\n"></section>
+        <section data-markdown="005_issue_triage.md" data-separator="^\n\n\n" data-vertical="^\n\n"></section>
+        <section data-markdown="006_review-and-contribute-code.md" data-separator="^\n\n\n" data-vertical="^\n\n"></section>
+    </div>
+</div>
+
+<script src="reveal.js/lib/js/head.min.js"></script>
+<script src="reveal.js/js/reveal.js"></script>
+
+<script>
+
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1400,
+        height: 800,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.01,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 1.0,
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            {
+                src: 'reveal.js/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'reveal.js/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'reveal.js/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            /*
+             { src: 'reveal.js/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+             */
+            {src: 'reveal.js/notes/notes.js'}
+        ]
+    });
+
+</script>
+</body>
+</html>
