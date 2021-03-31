@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-## "Go" in the Moby project
+## Go at Docker and the Moby project
 
 Contributing Today, March 31, 2021
 <br /><br />
